@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<view class="" v-if="is_show">
-			<image  :class="name=='年会信息'?'detailPicA':'detailPic'"
-			:src="mainData.mainImg&&mainData.mainImg.length>0?mainData.mainImg[0].url:'../../static/images/img2.jpg'"  :mode="name=='年会信息'?'':'widthFix'"></image>
+			<image  :class="name=='年会信息'||(mainData.mainImg&&mainData.mainImg.length==0)?'detailPicA':'detailPic'"
+			:src="mainData.mainImg&&mainData.mainImg.length>0?mainData.mainImg[0].url:'../../static/images/img2.jpg'"  :mode="name=='年会信息'||(mainData.mainImg&&mainData.mainImg.length==0)?'':'widthFix'"></image>
 		</view>
 		
 	</view>

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="indexBJ" style=""></view>
+		<view class="indexBJ" style=""><image src="../../static/images/img.jpg" mode=""></image></view>
 		
 		<view class="indexNav center flexRowBetween">
 			<view class="item" @click="Router.navigateTo({route:{path:'/pages/Seat-mySeat/Seat-mySeat'}})">
@@ -46,8 +46,8 @@
 </script>
 
 <style>
-	/* @import "../../assets/style/navbar.css"; */
-	.indexBJ{width: 100%;height: 100%;background: url(../../static/images/img.jpg) no-repeat 0 0 /100% 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;}
+	.indexBJ{width: 100%;height: 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;}
+	.indexBJ image{width: 100%;height: 100%; display: block;}
 	
 	.indexNav{flex-wrap: wrap;align-items: flex-start;position: relative;z-index: 2;width: 100%;box-sizing: border-box;padding: 75% 8% 0 8%;}
 	.indexNav .item{width: 50%;}
