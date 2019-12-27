@@ -1,10 +1,10 @@
 <template>
 	<view>
 		
-		<view class="indexBJ"><image src="../../static/images/img0.jpg" mode=""></image></view>
-		<view class="flexCenter logoIcon"><image src="../../static/images/logo.png" mode="widthFix"></image></view>
+		<view class="indexBJ"><image src="../../static/images/img.jpg" mode=""></image></view>
+		<!-- <view class="flexCenter logoIcon"><image src="../../static/images/logo.png" mode="widthFix"></image></view> -->
 		<view class="campusNav fs13 center">
-			<view class="item" v-for="(item,index) in mainData" :key="index" :data-id="item.id"
+			<view class="item flexCenter" v-for="(item,index) in mainData" :key="index" :data-id="item.id"
 			@click="Router.navigateTo({route:{path:'/pages/details/details?id='+$event.currentTarget.dataset.id}})">{{item.title}}</view>
 		</view>
 		
@@ -66,12 +66,13 @@
 </script>
 
 <style>
-	.indexBJ{width: 100%;height: 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;}
+	page{width: 100%;position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 0;}
+	.indexBJ{width: 100%;height: 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;z-index: 1;}
 	.indexBJ image{width: 100%;height: 100%; display: block;}
 	
 	.logoIcon{margin: 60rpx 0 5% 0;position: relative;z-index: 6;}
 	.logoIcon image{width: 60%; display: block;}
-	.campusNav{position:relative;z-index: 2;}
-	.campusNav .item{width: 475rpx;margin:0 auto 8rpx auto;border: 1px solid #e30083;border-radius: 16rpx;line-height: 60rpx;height: 60rpx;}
+	.campusNav{z-index: 2;width: 100%;height: 60%;position: absolute;top: 28%;left:0}
+	.campusNav .item{width: 475rpx;margin:0 auto 1.5% auto;border: 1px solid #e30083;border-radius: 16rpx;height: 8%;}
 	
 </style>
