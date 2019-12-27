@@ -13,7 +13,7 @@
 					<view class="fs13 ftw">EF英孚教育青少儿英语西安学校2019年度盛典</view>
 					<view class="fs13 ftw pdt5 pdb25">EF Xi'An 2019 Annual Gala Party</view>
 					<view>西安万丽酒店 二楼大宴会厅</view>
-					<view class="fs11">The Renaissance Xian Hotel Grand Ballroom,2nd Floor</view>
+					<view class="fs11">The Renaissance Xian Hotel Grand Ballroom, 2nd Floor</view>
 				</view>
 				<view class="hotelPic pdtb15">
 					<image src="../../static/images/hotel.png" mode="widthFix"></image>
@@ -24,7 +24,7 @@
 				</view>
 				<view class="flex mgb20" style="align-items: flex-start;">
 					<view class="title">Address:</view>
-					<view class="mgl5">No.355 Huixin Road，Qujiang New District, Xi'an,ShaanXi,China</view>
+					<view class="mgl5">No.355 Huixin Road, Qujiang New District, Xi'an, Shaanxi, China</view>
 				</view>
 				<view class="mapPic mgb15" @click="toMap()">
 					<image :src="mainData.mainImg&&mainData.mainImg[0]?mainData.mainImg[0].url:''" mode=""></image>
@@ -48,17 +48,17 @@
 					</view>
 				</view>
 				<view class="pdt20 chuxingGps fs11">
-					<view class="ftw">How To Get There：</view>
+					<view class="ftw">How To Get There:</view>
 					<view class="item flex">
-						<view class="ll">Bus Line：</view>
+						<view class="ll">Bus Line:</view>
 						<view class="rr">Qu Jiang Guo Ji Hui Zhan Zhong Xin Stop</view>
 					</view>
 					<view class="item flex">
-						<view class="ll">Subway：</view>
-						<view class="rr">Line2,Hui Zhan Zhong Xin Stop, C Exit,then walking 1km</view>
+						<view class="ll">Subway:</view>
+						<view class="rr">Line 2, Hui Zhan Zhong Xin Stop, C Exit, then walking 1km</view>
 					</view>
 					<view class="item flex">
-						<view class="ll">Taxi Pin：</view>
+						<view class="ll">Taxi Pin:</view>
 						<view class="rr">西安万丽酒店</view>
 					</view>
 				</view>
