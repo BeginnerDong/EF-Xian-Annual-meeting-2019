@@ -1,7 +1,8 @@
 <template>
 	<view>
-		<view class="">
-			<image class="detailPic" src="../../static/images/img2.jpg" mode="widthFix"></image>
+		<view class="" v-if="is_show">
+			<image class="detailPic" 
+			:src="mainData.mainImg&&mainData.mainImg.length>0?mainData.mainImg[0].url:'../../static/images/img2.jpg'"  mode="widthFix"></image>
 		</view>
 		
 	</view>
@@ -10,26 +11,52 @@
 
 <script>
 	export default {
+		
 		data() {
 			return {
 				Router:this.$Router,
 				showView: false,
 				wx_info:{},
-				is_show:false
+				is_show:false,
+				mainData:{}
 			}
 		},
-		onLoad() {
+		
+		onLoad(options) {
 			const self = this;
-			// self.$Utils.loadAll(['getMainData'], self);
+			self.name = options.name;
+			self.$Utils.loadAll(['getMainData'], self);
 		},
+		
+		
 		methods: {
+			
 			getMainData() {
 				const self = this;
-				console.log('852369')
 				const postData = {};
-				postData.tokenFuncName = 'getProjectToken';
-				self.$apis.orderGet(postData, callback);
-			}
+				postData.searchItem = {
+					thirdapp_id:2
+				};
+				postData.getBefore = {
+					caseData: {
+						tableName: 'Label',
+						searchItem: {
+							title: ['=', [self.name]],
+						},
+						middleKey: 'menu_id',
+						key: 'id',
+						condition: 'in',
+					},
+				};
+				const callback = (res) => {
+					if (res.solely_code == 100000 && res.info.data[0]) {
+						self.mainData = res.info.data[0];
+					} 
+					self.is_show = true
+					self.$Utils.finishFunc('getMainData');
+				};
+				self.$apis.articleGet(postData, callback);
+			},
 		}
 	};
 </script>

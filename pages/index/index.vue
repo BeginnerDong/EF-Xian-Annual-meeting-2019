@@ -3,7 +3,7 @@
 		<view class="indexBJ" style=""></view>
 		
 		<view class="indexNav center flexRowBetween">
-			<view class="item" @click="Router.navigateTo({route:{path:'/pages/invite/invite'}})">
+			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details?name=年会信息'}})">
 				<view><image class="icon" src="../../static/images/icon.png" mode=""></image></view>
 				<view class="title">年会信息</view>
 				<view class="text">event information</view>
@@ -18,7 +18,7 @@
 				<view class="title">席位安排</view>
 				<view class="text">seating plan</view>
 			</view>
-			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details'}})">
+			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details?name=晚宴流程'}})">
 				<view><image class="icon" src="../../static/images/icon3.png" mode=""></image></view>
 				<view class="title">晚宴流程</view>
 				<view class="text">programml</view>

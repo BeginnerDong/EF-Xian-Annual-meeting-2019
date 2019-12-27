@@ -26,11 +26,11 @@
 					<view class="title">Address:</view>
 					<view class="mgl5">No.355 Huixin Road，Qujing New District, Xi'An,ShanXi,China</view>
 				</view>
-				<view class="mapPic mgb15">
-					<image src="../../static/images/img4.jpg" mode=""></image>
+				<view class="mapPic mgb15" @click="toMap()">
+					<image :src="mainData.mainImg&&mainData.mainImg[0]?mainData.mainImg[0].url:''" mode=""></image>
 				</view>
-				<view class="mapPic">
-					<image src="../../static/images/img5.jpg" mode=""></image>
+				<view class="mapPic" @click="toMap()">
+					<image :src="mainData.mainImg&&mainData.mainImg[1]?mainData.mainImg[1].url:''" mode=""></image>
 				</view>
 				<view class="pdt20 chuxingGps">
 					<view class="ftw">如何到达</view>
@@ -76,21 +76,58 @@
 				Router:this.$Router,
 				showView: false,
 				wx_info:{},
-				is_show:false
+				is_show:false,
+				mainData:{}
 			}
 		},
+		
 		onLoad() {
 			const self = this;
-			// self.$Utils.loadAll(['getMainData'], self);
+			self.$Utils.loadAll(['getMainData'], self);
 		},
+		
 		methods: {
+			
+			toMap(){
+				const self = this;
+				console.log(2332432)
+				uni.openLocation({
+					latitude: parseFloat(self.mainData.latitude),
+					longitude: parseFloat(self.mainData.longitude),
+					name:'西安万丽酒店',
+					address:'陕西省西安市曲江新区汇新路355号',
+					success: function () {
+						console.log('success');
+					}
+				});
+			},
+			
 			getMainData() {
 				const self = this;
-				console.log('852369')
 				const postData = {};
-				postData.tokenFuncName = 'getProjectToken';
-				self.$apis.orderGet(postData, callback);
-			}
+				postData.searchItem = {
+					thirdapp_id:2
+				};
+				postData.getBefore = {
+					caseData: {
+						tableName: 'Label',
+						searchItem: {
+							title: ['=', ['酒店指引']],
+						},
+						middleKey: 'menu_id',
+						key: 'id',
+						condition: 'in',
+					},
+				};
+				const callback = (res) => {
+					if (res.solely_code == 100000 && res.info.data[0]) {
+						self.mainData = res.info.data[0];
+					}
+					self.$Utils.finishFunc('getMainData');
+				};
+				self.$apis.articleGet(postData, callback);
+			},
+			
 		}
 	};
 </script>

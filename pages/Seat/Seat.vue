@@ -8,7 +8,7 @@
 				<view class="title">我的座位</view>
 				<view class="text">my seating arrangement</view>
 			</view>
-			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details'}})">
+			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details?name=桌位分布'}})">
 				<view><image class="icon" src="../../static/images/icon4.png" mode=""></image></view>
 				<view class="title">桌位分布</view>
 				<view class="text" style="width: 120rpx;">table plan</view>
