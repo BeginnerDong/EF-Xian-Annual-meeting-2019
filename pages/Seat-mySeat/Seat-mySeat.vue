@@ -66,7 +66,7 @@
 
 <style>
 	.indexBJ{width: 100%;height: 100%;background: url(../../static/images/img.jpg) no-repeat 0 0 /100% 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;}
-	.campusNav{padding:340rpx 18% 0 18%;position:relative;z-index: 2;}
+	.campusNav{padding:55% 18% 0 18%;position:relative;z-index: 2;}
 	.campusNav .item{margin-bottom: 8rpx;border: 1px solid #e30083;border-radius: 20rpx;line-height: 60rpx;height: 60rpx;}
 	
 </style>

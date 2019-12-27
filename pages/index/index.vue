@@ -21,7 +21,7 @@
 			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details?name=晚宴流程'}})">
 				<view><image class="icon" src="../../static/images/icon3.png" mode=""></image></view>
 				<view class="title">晚宴流程</view>
-				<view class="text">programml</view>
+				<view class="text">programme</view>
 			</view>
 		</view>
 		
@@ -59,8 +59,8 @@
 	/* @import "../../assets/style/navbar.css"; */
 	.indexBJ{width: 100%;height: 100%;background: url(../../static/images/img.jpg) no-repeat 0 0 /100% 100%;position: fixed;top: 0;right: 0; bottom: 0;left: 0;}
 	
-	.indexNav{flex-wrap: wrap;align-items: flex-start;position: relative;z-index: 2;width: 100%;box-sizing: border-box;padding: 300rpx 8% 0 8%;}
-	.indexNav .item{width: 50%;margin-top: 90rpx;}
+	.indexNav{flex-wrap: wrap;align-items: flex-start;position: relative;z-index: 2;width: 100%;box-sizing: border-box;padding: 50% 8% 0 8%;}
+	.indexNav .item{width: 50%;margin-top: 80rpx;}
 	.indexNav .item .icon{width: 80rpx;height: 80rpx;display: block;margin: 0 auto;}
 	.indexNav .item .title{font-size: 30rpx;font-weight: bold;padding: 20rpx 0 14rpx 0;}
 	.indexNav .item .text{width: 170rpx;font-size: 24rpx;color: #4e4a49;text-transform:uppercase;margin: 0 auto;line-height: 30rpx;}

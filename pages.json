@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText":" ",//设置页面标题文字
+				"navigationBarTitleText":"EF Xi′An 2019",//设置页面标题文字
 				"onReachBottomDistance":100
 				 // "navigationStyle": "custom"
 			}
@@ -11,14 +11,14 @@
 		{
 			"path": "pages/invite/invite",
 			"style": {
-				"navigationBarTitleText": "",//邀请函
+				"navigationBarTitleText": "EF Xi′An 2019",//邀请函
 				"onReachBottomDistance":100
 			}
 		},
 		{
 			"path": "pages/details/details",
 			"style": {
-				"navigationBarTitleText": "",//详情
+				"navigationBarTitleText": "EF Xi′An 2019",//详情
 				"onReachBottomDistance":100
 			}
 		},
@@ -32,14 +32,14 @@
 		{
 			"path": "pages/Seat/Seat",
 			"style": {
-				"navigationBarTitleText": "",//席位安排
+				"navigationBarTitleText": "EF Xi′An 2019",//席位安排
 				"onReachBottomDistance":100
 			}
 		},
 		{
 			"path": "pages/Seat-mySeat/Seat-mySeat",
 			"style": {
-				"navigationBarTitleText": "",//我的座位
+				"navigationBarTitleText": "EF Xi′An 2019",//我的座位
 				"onReachBottomDistance":100
 			}
 		}
