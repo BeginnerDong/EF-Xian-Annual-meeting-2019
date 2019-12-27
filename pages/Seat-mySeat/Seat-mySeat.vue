@@ -4,8 +4,8 @@
 		<view class="indexBJ"><image src="../../static/images/img0.jpg" mode=""></image></view>
 		<view class="flexCenter logoIcon"><image src="../../static/images/logo.png" mode="widthFix"></image></view>
 		<view class="campusNav fs13 center">
-			<view class="item" v-for="(item,index) in mainData" :key="index" :data-name="item.title"
-			@click="Router.navigateTo({route:{path:'/pages/details/details?name='+$event.currentTarget.dataset.name}})">{{item.title}}</view>
+			<view class="item" v-for="(item,index) in mainData" :key="index" :data-id="item.id"
+			@click="Router.navigateTo({route:{path:'/pages/details/details?id='+$event.currentTarget.dataset.id}})">{{item.title}}</view>
 		</view>
 		
 	</view>

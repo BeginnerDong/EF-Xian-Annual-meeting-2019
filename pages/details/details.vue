@@ -25,7 +25,12 @@
 		
 		onLoad(options) {
 			const self = this;
-			self.name = options.name;
+			if(options.name){
+				self.name = options.name;
+			};
+			if(options.id){
+				self.id = options.id
+			};
 			self.$Utils.loadAll(['getMainData'], self);
 		},
 		
@@ -38,16 +43,21 @@
 				postData.searchItem = {
 					thirdapp_id:2
 				};
-				postData.getBefore = {
-					caseData: {
-						tableName: 'Label',
-						searchItem: {
-							title: ['=', [self.name]],
+				if(self.name){
+					postData.getBefore = {
+						caseData: {
+							tableName: 'Label',
+							searchItem: {
+								title: ['=', [self.name]],
+							},
+							middleKey: 'menu_id',
+							key: 'id',
+							condition: 'in',
 						},
-						middleKey: 'menu_id',
-						key: 'id',
-						condition: 'in',
-					},
+					};
+				};
+				if(self.id){
+					postData.searchItem.id = self.id
 				};
 				const callback = (res) => {
 					if (res.solely_code == 100000 && res.info.data[0]) {
