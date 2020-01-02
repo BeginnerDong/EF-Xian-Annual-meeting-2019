@@ -3,7 +3,7 @@
 		<view class="indexBJ" style=""><image src="../../static/images/img.jpg" mode=""></image></view>
 		
 		<view class="indexNav center flexRowBetween">
-			<view class="item" @click="Router.navigateTo({route:{path:'/pages/details/details?name=年会信息'}})">
+			<view class="item" @click="Router.navigateTo({route:{path:'/pages/invite/invite'}})">
 				<view><image class="icon" src="../../static/images/icon.png" mode=""></image></view>
 				<view class="title">年会信息</view>
 				<view class="text">event information</view>
