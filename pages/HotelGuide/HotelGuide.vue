@@ -11,7 +11,7 @@
 			<view class="infor fs12">
 				<view class="center">
 					<view class="fs13 ftw">EF英孚教育青少儿英语西安学校2019年度盛典</view>
-					<view class="fs13 ftw pdt5 pdb25">EF Xi'An 2019 Annual Gala Party</view>
+					<view class="fs13 ftw pdt5 pdb25">2019 EF Xi'An Annual Gala Party</view>
 					<view>西安万丽酒店 二楼大宴会厅</view>
 					<view class="fs11">The Renaissance Xian Hotel Grand Ballroom, 2nd Floor</view>
 				</view>
