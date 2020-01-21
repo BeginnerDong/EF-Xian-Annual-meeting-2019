@@ -48,6 +48,7 @@
 		"navigationBarTextStyle": "white",//导航栏文字蓝色
 		"navigationBarTitleText": "英孚教育",
 		"navigationBarBackgroundColor": "#e30083"
+		/* "backgroundColor":"#e30083" */
 	},
 	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)

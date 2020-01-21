@@ -13,7 +13,7 @@
 					<view class="fs13 ftw">EF英孚教育青少儿英语西安学校2019年度盛典</view>
 					<view class="fs13 ftw pdt5 pdb25">2019 EF Xi'An Annual Gala Party</view>
 					<view>西安万丽酒店 二楼大宴会厅</view>
-					<view class="fs11">The Renaissance Xian Hotel Grand Ballroom, 2nd Floor</view>
+					<view class="fs11">The Renaissance Xi'An Hotel Grand Ballroom, 2nd Floor</view>
 				</view>
 				<view class="hotelPic pdtb15">
 					<image src="../../static/images/hotel.png" mode="widthFix"></image>
@@ -36,7 +36,7 @@
 					<view class="ftw">如何到达</view>
 					<view class="item flex">
 						<view class="ll">公交出行：</view>
-						<view class="rr">曲江国际会展中心站下车步行300米</view>
+						<view class="rr">曲江国际会议中心站下车步行300米</view>
 					</view>
 					<view class="item flex">
 						<view class="ll">地铁出行：</view>
@@ -51,7 +51,7 @@
 					<view class="ftw">How To Get There:</view>
 					<view class="item flex">
 						<view class="ll">Bus Line:</view>
-						<view class="rr">Qu Jiang Guo Ji Hui Zhan Zhong Xin Stop</view>
+						<view class="rr">Qu Jiang Guo Ji Hui Yi Zhong Xin Stop</view>
 					</view>
 					<view class="item flex">
 						<view class="ll">Subway:</view>

@@ -25,6 +25,12 @@
 		
 		onLoad(options) {
 			const self = this;
+			
+			/* wx.setBackgroundColor({
+			    backgroundColor:  '#e30083',
+			    backgroundColorBottom: '#e30083'
+			}); */
+			
 			if(options.name){
 				self.name = options.name;
 			};

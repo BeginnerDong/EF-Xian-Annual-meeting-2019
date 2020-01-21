@@ -19,7 +19,7 @@
 							<view class="ll"><image class="icon" src="../../static/images/icon03.png" mode=""></image></view>
 							<view class="rr" style="padding-top: 6rpx;">
 								<view>西安万丽酒店 二楼大宴会厅</view>
-								<view class="text">The Renaissance xian hotel Grand Ballroom, 2nd Floor</view>
+								<view class="text">The Renaissance Xi'An hotel Grand Ballroom, 2nd Floor</view>
 							</view>
 						</view>
 					</view>
@@ -27,8 +27,8 @@
 						<view class="w flexRowBetween">
 							<view class="ll"><image class="icon" src="../../static/images/icon01.png" mode=""></image></view>
 							<view class="rr">
-								<view>请在17:00前抵达酒店</view>
-								<view class="text">Please arrive by 17:00</view>
+								<view>请在16:30前抵达酒店</view>
+								<view class="text">Please arrive by 16:30</view>
 							</view>
 						</view>
 					</view>
